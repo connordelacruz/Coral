@@ -239,7 +239,7 @@ if ($resource->titleText){
             <link rel="stylesheet" type="text/css" href="css/rightPanel.css">
 	<div id='div_fullRightPanel' class='rightPanel'>
         <div style="width:265px;text-align:left;padding:10px;">
-			<div id="side-menu-title"><span class="chevron"></span> <?php echo _("Helpful Links"); ?></div>
+			<div id="side-menu-title"><span class="chevron"></span> <span class="title-text"><?php echo _("Helpful Links"); ?></span></div>
 			<div style='margin:10px 8px 0px 8px;' id='div_rightPanel'></div>
 		</div>
 

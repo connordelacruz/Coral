@@ -17,6 +17,9 @@ div#div_fullRightPanel.rightPanel {
   div#div_fullRightPanel.rightPanel #div_rightPanel {
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     display: none; }
+  div#div_fullRightPanel.rightPanel #side-menu-title .title-text {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    opacity: 0; }
   div#div_fullRightPanel.rightPanel:hover {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     -webkit-transform: translateX(0);
@@ -26,6 +29,8 @@ div#div_fullRightPanel.rightPanel {
     transform: translateX(0); }
     div#div_fullRightPanel.rightPanel:hover #div_rightPanel {
       display: block; }
+    div#div_fullRightPanel.rightPanel:hover #side-menu-title .title-text {
+      opacity: 1; }
 
 /* Arrow to indicate that the panel will move on hover
  * CSS courtesy of https://codepen.io/jonneal/pen/kptBs

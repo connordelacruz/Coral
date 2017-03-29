@@ -7,7 +7,25 @@ div#div_fullRightPanel.rightPanel {
   padding: 0;
   margin: 0;
   background-color: white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); }
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  -webkit-transform: translateX(80%);
+  -moz-transform: translateX(80%);
+  -ms-transform: translateX(80%);
+  -o-transform: translateX(80%);
+  transform: translateX(80%); }
+  div#div_fullRightPanel.rightPanel #div_rightPanel {
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    display: none; }
+  div#div_fullRightPanel.rightPanel:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0); }
+    div#div_fullRightPanel.rightPanel:hover #div_rightPanel {
+      display: block; }
 
 /* Arrow to indicate that the panel will move on hover
  * CSS courtesy of https://codepen.io/jonneal/pen/kptBs

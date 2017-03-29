@@ -1,0 +1,9 @@
+/* Styling for the right panel */
+
+// The entire right panel
+div#div_fullRightPanel.rightPanel {
+  // Add a shadow so it's clear the element is above the other contents
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+              0 3px 6px rgba(0,0,0,0.23);
+
+}

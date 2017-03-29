@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,iCAAiC;AAGjC,iCAAkC;EAEhC,UAAU,EAAE,4DAC0B",
+"sources": ["rightPanel.scss"],
+"names": [],
+"file": "rightPanel.css"
+}

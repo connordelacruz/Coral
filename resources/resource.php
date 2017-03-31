@@ -237,27 +237,27 @@ if ($resource->titleText){
 	</div>
             <?php // TODO: merge stylesheet and remove this link ?>
             <link rel="stylesheet" type="text/css" href="css/rightPanel.css">
-    <?php // TODO: move up a bit so it doesn't cover the table buttons? ?>
-	<div id='div_fullRightPanel' class='rightPanel'>
-        <div id="div_rightPanelContainer">
-			<div id="side-menu-title"><span class="chevron"></span> <span class="title-text"><?php echo _("Helpful Links"); ?></span></div>
-			<div id='div_rightPanel'></div>
-		</div>
+            <?php // TODO: move up a bit so it doesn't cover the table buttons? ?>
+            <div id='div_fullRightPanel' class='rightPanel'>
+                <div id="div_rightPanelContainer">
+                    <div id="side-menu-title"><span class="chevron"></span> <span class="title-text"><?php echo _("Helpful Links"); ?></span></div>
+                    <div id='div_rightPanel'></div>
+                </div>
 
-		<div>
+                <div>
 
 
-					<?php if ($config->settings->feedbackEmailAddress != '') {?>
-						<div style='margin:0px 8px 10px 8px;'>
-						<div style='width:219px; padding:7px; margin-bottom:5px;'>
-						<a href="mailto: <?php echo $config->settings->feedbackEmailAddress; ?>?subject=<?php echo $resource->titleText . ' (Resource ID: ' . $resource->resourceID . ')'; ?>" class='helpfulLink'><?php echo _("Send feedback on this resource");?></a>
-						</div>
-						</div>
-					<?php } ?>
+                    <?php if ($config->settings->feedbackEmailAddress != '') {?>
+                        <div style='margin:0px 8px 10px 8px;'>
+                            <div style='width:219px; padding:7px; margin-bottom:5px;'>
+                                <a href="mailto: <?php echo $config->settings->feedbackEmailAddress; ?>?subject=<?php echo $resource->titleText . ' (Resource ID: ' . $resource->resourceID . ')'; ?>" class='helpfulLink'><?php echo _("Send feedback on this resource");?></a>
+                            </div>
+                        </div>
+                    <?php } ?>
 
-		</div>
+                </div>
 
-	</div>
+            </div>
 	</div>
 	<script type="text/javascript" src="js/resource.js"></script>
 	<?php if ((isset($_GET['showTab'])) && ($_GET['showTab'] == 'cataloging')){ ?>

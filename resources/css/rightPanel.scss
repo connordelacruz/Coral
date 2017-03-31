@@ -8,7 +8,7 @@ div#div_fullRightPanel.rightPanel {
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   // Add a shadow so it's clear the element is above the other contents
   box-shadow: 0 3px 6px rgba(0,0,0,0.16),
-              0 3px 6px rgba(0,0,0,0.23);
+  0 3px 6px rgba(0,0,0,0.23);
   // Move panel off to the side
   -webkit-transform: translateX(80%);
   -moz-transform: translateX(80%);
@@ -16,7 +16,18 @@ div#div_fullRightPanel.rightPanel {
   -o-transform: translateX(80%);
   transform: translateX(80%);
 
+
+  #div_rightPanelContainer {
+    // Extracted from in-line styling
+    width: 265px;
+    text-align: left;
+    padding: 10px;
+  }
+
   #div_rightPanel {
+    // Extracted from in-line styling
+    margin:10px 8px 0 8px;
+
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     // Hide right panel contents when out of focus
     display: none;
@@ -44,6 +55,7 @@ div#div_fullRightPanel.rightPanel {
       opacity: 1;
     }
   }
+
 }
 
 /* Arrow to indicate that the panel will move on hover

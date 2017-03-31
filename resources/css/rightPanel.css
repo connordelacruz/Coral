@@ -14,7 +14,12 @@ div#div_fullRightPanel.rightPanel {
   -ms-transform: translateX(80%);
   -o-transform: translateX(80%);
   transform: translateX(80%); }
+  div#div_fullRightPanel.rightPanel #div_rightPanelContainer {
+    width: 265px;
+    text-align: left;
+    padding: 10px; }
   div#div_fullRightPanel.rightPanel #div_rightPanel {
+    margin: 10px 8px 0 8px;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     display: none; }
   div#div_fullRightPanel.rightPanel #side-menu-title .title-text {

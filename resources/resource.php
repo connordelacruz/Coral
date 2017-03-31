@@ -237,10 +237,11 @@ if ($resource->titleText){
 	</div>
             <?php // TODO: merge stylesheet and remove this link ?>
             <link rel="stylesheet" type="text/css" href="css/rightPanel.css">
+    <?php // TODO: move up a bit so it doesn't cover the table buttons? ?>
 	<div id='div_fullRightPanel' class='rightPanel'>
-        <div style="width:265px;text-align:left;padding:10px;">
+        <div id="div_rightPanelContainer">
 			<div id="side-menu-title"><span class="chevron"></span> <span class="title-text"><?php echo _("Helpful Links"); ?></span></div>
-			<div style='margin:10px 8px 0px 8px;' id='div_rightPanel'></div>
+			<div id='div_rightPanel'></div>
 		</div>
 
 		<div>
